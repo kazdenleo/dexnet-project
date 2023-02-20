@@ -1,6 +1,5 @@
 .text-block {
     display: grid;
-    height: 100%;
 
     &_item1 { grid-area: item1; }
     &_item2 { grid-area: item2; }
@@ -136,13 +135,17 @@
         }
     }
 
-    &_position_road {
-        flex-direction: column;
-    }
-
     &__list-icon {
         max-height: 30px;
         padding-right: 23px;
+    }
+
+    &_position_road {
+        grid-template-areas:
+            'item1'
+            'item2'
+            'item3'
+            'item4';
     }
 
     @media screen and (max-width: 1000px) {
@@ -154,5 +157,34 @@
             max-width: 100%;
             grid-template-columns: 50px 1fr;
             }
+    }
+
+    &_position_road {
+        max-width: 280px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        &_position_road {
+            max-width: 260px;
+        }
+    }
+
+    @media screen and (max-width: 1180px) {
+        &_position_road {
+            max-width: 240px;
+        }
+    }
+
+    @media screen and (max-width: 1080px) {
+        &_position_road {
+            max-width: 230px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        &_position_road {
+            max-width: 100%;
+            padding-bottom: 25px;
+        }
     }
 }

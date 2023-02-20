@@ -1,25 +1,23 @@
 .footer {
-  padding: rem(20) 0;
-  background: $blackColor;
-  margin-top: -1px;
-  &__container {
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 1024px) {
-      flex-direction: column;
-      align-items: flex-start;
+    padding: rem(20) 0;
+    background: $blackColor;
+    margin-top: -1px;
+    padding: 38px 0px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start;
+        }
     }
-  }
 
-  &__img {
-    width: 100%;
-  }
-
-  &__block {
-    position: absolute;
-    bottom: 43px;
-    left: 40px;
-}
+    &__block {
+        position: absolute;
+        bottom: 43px;
+        left: 40px;
+    }
 
 @media screen and (max-width: 1024px) {
     &__block {
@@ -82,5 +80,70 @@
     opacity: 1;
     color: #fff;
 }
-    
+
+&__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+&__list {
+    display: flex;
+    position: relative;
+}
+
+&__list-item {
+    font-family: Eurostile;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding-right: 43px;
+}
+
+&__list-item:last-of-type {
+    padding-right: 0;
+}
+
+&__link {
+    color: $blueColor;
+}
+
+&__twitter::before {
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    top: -2px;
+    right: 48px;
+    content: "";
+    background: url(../../images/twetter.svg) no-repeat;
+    cursor: pointer;
+}
+
+&__github::before {
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    top: -2px;
+    right: 135px;
+    content: "";
+    background: url(../../images/iconmonstr-github-1_.svg) no-repeat;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    &__content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    &__list {
+        padding-bottom: 23px;
+    }
+    &__list:last-of-type {
+        padding-right: 0;
+        
+    }
+}
+
 }

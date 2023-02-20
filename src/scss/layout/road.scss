@@ -27,36 +27,6 @@
         }
     }
 
-    &__text-block {
-        display: flex;
-        max-width: 280px;
-    }
-
-    @media screen and (max-width: 1280px) {
-        &__text-block  {
-            max-width: 260px;
-        }
-    }
-
-    @media screen and (max-width: 1180px) {
-        &__text-block  {
-            max-width: 240px;
-        }
-    }
-
-    @media screen and (max-width: 1080px) {
-        &__text-block  {
-            max-width: 230px;
-        }
-    }
-
-    @media screen and (max-width: 1000px) {
-        &__text-block  {
-            max-width: 100%;
-            padding-bottom: 25px;
-        }
-    } 
-
     &__icon {
         display: none;
     }
