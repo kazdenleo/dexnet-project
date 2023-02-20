@@ -1,0 +1,45 @@
+.price {
+    padding: 60px 0 142px;
+    display: flex;
+    align-items: center;
+
+    &_position_device {
+        flex-direction: column;
+    }
+
+    &__num {
+        font-family: Eurostile Extd;
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 1.19;
+        color: $whiteColor;
+        padding: 0 46px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &__num_position_header {
+            display: none;
+        }
+    }
+
+    &__num_position_device {
+        display: grid;
+        justify-items: center;
+        padding: 46px 0 0;
+        color: $blueColor;
+    }
+    
+    &__price-cur {
+        font-family: Eurostile;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.11;
+        color: $whiteColor;
+    }
+
+    &__price-cur_position_device {
+        color: $blueColor;
+    }
+}
+
+ 

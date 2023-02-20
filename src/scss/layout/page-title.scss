@@ -1,0 +1,57 @@
+.page-title {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+
+    &__accent {
+        color: $blueColor;
+    }
+
+    &_position_header {
+        font-family: 'Eurostile Extd';
+        max-width: 650px;
+        font-size: 73px;
+        line-height: 66.13px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &_position_header {
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 36px;
+        }
+    }
+
+    &_position_dex-info {
+        max-width: 487px;
+    }
+
+    &_position_vs {
+        max-width: 600px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &_position_vs {
+            font-family: Eurostile Extd;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 36px;
+            max-width: 300px;
+        }
+    }
+
+    &_position_device {
+        display: grid;
+        max-width: 380px;
+    }
+
+    &_position_stage {
+        max-width: 650px;
+    }
+
+    &_position_service {
+        display: grid;
+        padding-bottom: 67px;
+        max-width: 670px;
+    }
+}

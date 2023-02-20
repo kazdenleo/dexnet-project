@@ -1,0 +1,21 @@
+.road {
+    &__content {
+        padding-top: 76px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        padding-bottom: 27px;
+    }
+
+    &__text-blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-block {
+        display: flex;
+        max-width: 286px;
+    }
+}

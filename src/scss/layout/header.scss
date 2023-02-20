@@ -1,15 +1,122 @@
 // =====================================================================================================================
 .header {
+  background: $blackColor;
   width: 100%;
   &.sticky {
     // ..стили для липкого хедера
   }
   // .header__container
+  &__top-container {
+    padding: 25px 0 23px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    &__top-container {
+        padding: 25px 40px 23px 30px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    &__top-container {
+        padding: 16px 26px 16px 16px;
+    }
+  }
+
+  &__content {
+    background:
+    no-repeat right/830px url(../../images/sputnik.png),
+    no-repeat -75% 83% url(../../images/main-earth.png);
+    padding: 100px 0 190px;
+  }
+
+  @media screen and (max-width: 600px) {
+    &__content {
+        padding: 68px 0;
+        text-align: center;
+        no-repeat left/700px url(../../images/sputnik.png),
+        no-repeat 25% 0% url(../../images/main-earth.png);
+    }
+  }
+
+  &__desc {
+    padding-top: 28px;
+    max-width: 560px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.18;
+    color: rgba(255, 255, 255, .8);
+    ;
+  }
+
+  @media screen and (max-width: 600px) {
+    &__desc {
+        padding: 16px 0 32px;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 320px;
+    }
+  }
+
+  &__top-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 132px;
+    height: 28px;
+  }
+  
+  &__language {
+    color: #747474;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  &__language:hover {
+    color: #fff;
+  }
+  
+  &__language::after {
+    border: medium solid transparent;
+    content: "";
+    border-color: #747474 rgba(255, 212, 52, 0) rgba(255, 212, 52, 0);
+    border-width: 6px;
+    position: absolute;
+    top: 7px;
+    margin-left: 4px;
+  }
+  
+  &__language-items {
+    position: absolute;
+    background: #747474;
+    display: none;
+  }
+  
+  &__language-items_active {
+    display: block;
+  }
+  
+  &__language-item {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  &__language-item:hover {
+    background: #0c0808;
+  }
+
   &__container {
     height: rem($headerHeight);
     display: flex;
     align-items: center;
   }
+
 }
 // =====================================================================================================================
 

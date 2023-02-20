@@ -1,0 +1,86 @@
+.burger {
+    position: relative;
+    z-index: 4;
+    box-sizing: content-box;
+    background: transparent;
+
+    &::before,
+    &::after {
+        
+        position: absolute;
+        background-color: $whiteColor;
+        content: '';
+        height: 2px;
+        right: 0;
+        border-radius: 2px;
+        transition: all 0.3s ease 0s;
+    }
+    &::before {
+        top: 0;
+        width: 32px;
+    }
+    &::after {
+        bottom: 8px;
+        width: 17px;
+    }
+
+    &_active {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: end;
+    }
+    
+    &_active::before {
+        transform: rotate(45deg);
+        top: 30px;
+    }
+    
+    &_active::after {
+        transform: rotate(-45deg);
+        top: 30px;
+    }
+
+    &__line_active {
+        display: none;
+    }
+
+    &__line {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: $whiteColor;
+        right: 0;
+        top: 9px;
+        border-radius: 2px;
+    }
+
+}
+
+/*@media screen and (max-width: 768px) {
+	.burger {
+        position: relative;
+        display: inline-flex;
+        width: 24px;
+        height: 20px;
+        transition: all 0.3s ease 0s;
+	}
+    .burger::before,
+    .burger::after {
+        width: 24px;
+        position: absolute;
+        background-color: rgba(2, 2, 2, 1);
+        content: '';
+        height: 4px;
+        right: 20px;
+        border-radius: 2px;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before {
+        top: 22px;
+    }
+    .burger::after {
+        bottom: 22px;
+    }
+}*/

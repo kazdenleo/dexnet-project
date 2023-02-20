@@ -1,0 +1,12 @@
+.stage {
+    background: url(../../images/main-earth.png);
+    background-position: 700px -600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__elements {
+        display: flex;
+        justify-content: space-between;
+        padding: 69px 0;
+    }
+}

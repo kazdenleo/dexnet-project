@@ -3,23 +3,27 @@
   max-width: 1440px;
   position: relative;
   margin: 0 auto;
-}
+  padding: 0 64px;
 
-@media screen and (max-width: 1024px) {
-  .container_info {
-    padding: 0 16px;
+  @media screen and (max-width: 1024px) {
+    &_info {
+      padding: 0 16px;
+    }
   }
-}
-
-@media screen and (max-width: 600px) {
-  .container_info {
-    padding: 0;
+  
+  @media screen and (max-width: 600px) {
+    & {
+      padding: 0px;
+    }
+    &_info {
+      padding: 0px;
+    }
   }
-}
-
-
-.container_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  
+  
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }

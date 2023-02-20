@@ -1,0 +1,53 @@
+.dex-info {
+    padding: 67px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__container {
+            flex-direction: column;
+        }
+    }
+
+    &__titleblock {
+        max-width: 487px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__titleblock {
+            max-width: 100%;
+            padding-bottom: 60px;
+        }
+    }
+
+    &__text {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-top: 40px;
+    }
+
+    &__accent {
+        color: $blueColor;
+    }
+
+    &__list-items {
+        display: grid;
+        row-gap: 40px;
+    }
+
+    &__list-item {
+        display: flex;
+    }
+
+    &__list-num {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 29px;
+        color: $blueColor;
+        padding-right: 23px;
+    }
+}

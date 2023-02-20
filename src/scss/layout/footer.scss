@@ -1,6 +1,7 @@
 .footer {
   padding: rem(20) 0;
   background: $blackColor;
+  margin-top: -1px;
   &__container {
     display: flex;
     align-items: center;
@@ -9,4 +10,77 @@
       align-items: flex-start;
     }
   }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__block {
+    position: absolute;
+    bottom: 43px;
+    left: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    &__block {
+        position: relative;
+        padding: 33px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    &__block {
+        padding: 33px 16px;
+    }
+}
+
+&__add {
+    position: relative;
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #fff;
+    max-width: 160px;
+    padding-left: 60px;
+    box-sizing: content-box;
+    opacity: .5;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+&__add::before {
+    padding-right: 15px;
+    content: "";
+    background: url(../../images/footer-add.svg) no-repeat;
+    position: absolute;
+    height: 47px;
+    width: 47px;
+    top: -5px;
+    left: 0px;
+    transition: .5s;
+}
+
+&__add:hover::before {
+    background: url(../../images/footer-add-blue.svg) no-repeat;
+}
+
+&__add:hover {
+    opacity: 1;
+    color: #00FFF0;
+}
+
+&__add:active::before {
+    background: url(../../images/footer-add.svg) no-repeat;
+    opacity: 1;
+}
+
+&__add:active {
+    opacity: 1;
+    color: #fff;
+}
+    
 }

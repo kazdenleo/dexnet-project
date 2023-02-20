@@ -4,7 +4,7 @@
 @import 'config/fonts';
 
 // Подключение sass функций и миксинов и рассширений стилей =======================================================================================================================
-//@import 'config/functions';
+@import 'config/functions';
 //@import 'config/mixins';
 @import 'config/patternSelectors';
 
@@ -25,16 +25,28 @@
 @import 'config/scrollbar';
 
 // Общие параметры, шаблоны(заготовки) и вспомагательные классы =======================================================================================================================
-//@import 'config/base';
+@import 'config/base';
 
 // БЕМ блоки используемые во всё проекте =======================================================================================================================
 @import 'config/common';
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
-@import 'layout/body';
 @import 'layout/container';
 @import 'layout/header';
+@import 'layout/burger';
 @import 'layout/footer';
+
+@import 'layout/page-title';
+@import 'layout/button';
+@import 'layout/dex-info';
+@import 'layout/vs';
+@import 'layout/device';
+@import 'layout/stage';
+@import 'layout/service';
+@import 'layout/road';
+@import 'layout/price';
+
+@import 'layout/text-block';
 
 @import 'layout/main';
 @import 'layout/info';

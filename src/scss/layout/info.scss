@@ -352,7 +352,7 @@
 .info__text-edit::before {
     padding-right: 15px;
     content: "";
-    background: url(../../img/edit.svg) no-repeat;
+    background: url(../../images/edit.svg) no-repeat;
 }
 
 .info__text-edit-img {
@@ -367,7 +367,7 @@
     top: 8px;
     right: -22px;
     content: "";
-    background: url(../../img/information.svg) no-repeat;
+    background: url(../../images/information.svg) no-repeat;
     cursor: pointer;
     transition: .5s;
 }
@@ -380,7 +380,7 @@
 }
 
 .info__text-edit-img:hover::after {
-    background: url(../../img/information-active.svg) no-repeat;
+    background: url(../../images/information-active.svg) no-repeat;
 }
 
 .info__sell {

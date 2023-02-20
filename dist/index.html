@@ -6,31 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная</title>
 
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body class="body">
 
 <div class="root">
   <header class="header">
     <div class="header__top-container">
-      <div class="container"></div>
+      <div class="container">
+        <div class="header__top-content">
+          <img class="header__logo" src="./images/logo.svg" alt="Логотип">
+          <button type="button" class="burger">
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
     </div>
     <div class="header__content">
-      <!-- заголовок, параграф, кнопка с ценой, изображение - фоном для дива -->
       <div class="container">
-
         <h1 class="page-title page-title_position_header">
           Глобальный
-          <span class="page-title__accent">DEX инт﻿ернет</span>
+          <span class="page-title__accent">DEX интернет</span>
         </h1>
 
         <p class="header__desc">Децентрализованный, автономный, безопасный интернет нового поколения совместно с низкоорбитальной спутниковой сетью SWARM от SPACEX</p>
 
-        <div class="header__btn-price">
-          <button class="button button_type_header open-popup" type="button" aria-label="Купить">Купить</button>
+        <div class="price">
+          <button class="button open-popup button_type_header" type="button" aria-label="Купить">Купить</button>
 
-          <p class="header__price">
-            1499 <span class="header__price-cur">USDT</span>
+          <p class="price__num price__num_position_header">
+            1499 <span class="price__price-cur">USDT</span>
           </p>
         </div>
 
@@ -39,37 +44,281 @@
     </div>
   </header>
 
-  <!--
-      Заголовок секций в отдельный блок section-title
-  -->
-
   <main class="main">
-    <section class="section info">
-      <div class="container">
-        <!-- колонки с текстом -->
+    <section class="section dex-info">
+      <div class="container dex-info__container">
+        <div class="dex-info__titleblock">
+          <h2 class="page-title page-title_dex-info">Истинный DEX интернет</h2>
+          <p class="dex-info__text">
+            Связь между устройствами Dex Node обеспечивается <span class="dex-info__accent">двумя независимым каналам</span> для передачи ключей шифрования и другой информации требующей повышенной безопасности
+          </p>
+        </div>
+
+        <div class="dex-info__list-items">
+          <div class="text-block">
+            <p class="text-block__list-num">01</p>
+            <div class="text-block__textblock">
+              <h3 class="text-block__title">Собственный высокочастотный наземный канал</h3>
+              <p class="text-block__text">
+                Автономный канал связи на частоте 433 Мгц, благодаря которому устройства Dex Node обнаруживают друг друга в радиусе до 10 км. и формируют устойчивый и безопасный канал связи, перекрывая друг друга наземным радиосигналом, объединяясь друг с другом по принципу пчелиных сот
+              </p>
+            </div>
+          </div>
+          <div class="text-block">
+            <p class="text-block__list-num">02</p>
+            <div class="text-block__textblock">
+              <h3 class="text-block__title">Низкоорбитальный спутниковый канал</h3>
+              <p class="text-block__text">
+                Второй канал связи обеспечивается прямым подключением устройств Dex Node к спутниковой системе Swarm от компании SpaceX. Dex Node через компактную антенну (25 см.) подключается к ближайшему низкоорбитальному спутнику Swarm для двустороннего обмена данными. Спутники SpaceX Swarm образуют устойчивую связь c Dex Node покрывая планету на 100%
+              </p>
+            </div>
+          </div>
+          <div class="text-block">
+            <img class="text-block__list-icon" src="./images/twoline.png" alt="Иконка 2 линии">
+            <p class="text-block__text text-block_opacity_90">
+              Второй канал связи обеспечивается прямым подключением устройств Dex Node к спутниковой системе Swarm от компании SpaceX. Dex Node через компактную антенну (25 см.) подключается к ближайшему низкоорбитальному спутнику Swarm для двустороннего обмена данными. Спутники SpaceX Swarm образуют устойчивую связь c Dex Node покрывая планету на 100%
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <section class="section vs">
       <div class="container">
-        <!-- 3 колонки, на десктопе кнопка с изображением абсолютом -->
+        <h2 class="page-title page-title_position_vs">
+          Dexnet 
+          <span class="page-title__accent">VS</span> 
+          публичный интернет
+        </h2>
+        <div class="vs__blocks">
+            <div class="vs__block">
+
+              <div class="text-block text-block_position_device">
+                <div class="text-block__textblock">
+                  <h3 class="text-block__title">Публичный интернет</h3>
+                  <p class="text-block__text">
+                    Публичный интернет существует благодаря объединению дата-центров и провайдеров, которые представляют собой централизованную платформу и имеют как физическую, так и юридическую уязвимость. Несмотря на то, что современный мир тотально стремится к децентрализации, такие технологии как Блокчейн, Торрент, DEX-биржи и другие производные продукты, продолжая использовать только публичный интернет остаются в централизованной среде. Что, к сожалению, на базовом уровне лишает такие разработки их изначального смысла - децентрализации
+                  </p>
+                </div>
+              </div>
+              <img class="vs__img" alt="" src="./images/earth.svg">
+            </div>
+          
+          <div class="vs__block vs__block_wthBtn">
+            <div class="vs__cont">
+              <div class="text-block text-block_position_device">
+                <div class="text-block__textblock">
+                  <h3 class="text-block__title">DEX Cloud</h3>
+                  <p class="text-block__text">
+                    Работает по принципу децентрализации дата-центров и передачи их в собственность пользователям — участникам децентрализованной сети. Каждая нода — это мини датацентр с двумя непересекающимися с публичным интернетом каналами связи
+                  </p>
+                </div>
+              </div>
+              <img class="vs__img" alt="" src="./images/circlee.svg">
+            </div>
+            <button class="button open-popup button_type_vs" type="button" aria-label="Купить">Купить</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section map">
+    <section class="section device">
       <div class="container">
+        <div class="device__blocks">
 
+          <div class="device__block">
+            <h2 class="page-title page-title_position_device">
+              <span class="page-title__accent">Весь мир</span> 
+              в маленьком устройстве
+            </h2>
+            <div class="text-block text-block_position_device">
+              <div class="text-block__textblock">
+                <h3 class="text-block__title">DEX Node</h3>
+                <p class="text-block__text">
+                  Физическое устройство c высокопроизводительным процессором, объемной SSD памятью, уникальным NFT аутентификатором и собственными независимыми беспроводными каналами связи
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="device__block">
+            <div class="price price_position_device">
+              <button class="button open-popup button_type_device" type="button" aria-label="Купить">Купить</button>
+              <p class="price__num price__num_position_device">1499 <span class="price__price-cur price__price-cur_position_device">USDT</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="device__block">
+            <div class="device__char">
+                <div class="device__char-num device__char-num-icon">2</div>
+                <div class="device__char-text">канала связи</div>
+                <div class="device__char-num">2<span class="device__char-num-text"> GB</span></div>
+                <div class="device__char-text">SSD-накопитель</div>
+                <div class="device__char-num">4<span class="device__char-num-text"> GB</span></div>
+                <div class="device__char-text">оперативная память</div>
+            </div>
+
+            <ul class="device__list">
+              <li class="device__list-item">СPU: 8 ядерный Amlogic S912 Cortex</li>
+              <li class="device__list-item">Info: Full Color IPS LCD</li>
+              <li class="device__list-item">Ethernet: RJ45, Wi-Fi</li>
+              <li class="device__list-item">Satellite system: SWARM by SpaceX</li>
+              <li class="device__list-item">Dex Wan: Собственный высокочастотный наземный канал 433Мгц, 2Вт.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section stage">
+      <div class="container">
+        <h2 class="page-title page-title_position_stage">Этапы 
+          <span class="page-title__accent">покрытия планеты</span>
+        </h2>
+        <div class="stage__elements">
+          <div class="text-block text-block_position_stage">
+            <p class="text-block__list-num text-block__list-num_position_stage">01</p>
+            <div class="text-block__textblock">
+              <h3 class="text-block__title">Перманентная активация устройств</h3>
+              <p class="text-block__text">
+                с использованием публичного интернета. Передача ключей и другой конфиденциальной информации между устройствами происходит по низкоорбитальному спутниковому каналу Swarm
+              </p>
+            </div>
+          </div>
+          <div class="text-block text-block_position_stage">
+            <p class="text-block__list-num text-block__list-num_position_stage">01</p>
+            <div class="text-block__textblock">
+              <h3 class="text-block__title">Формирование локальных кластеров</h3>
+              <p class="text-block__text">
+                Устройства объединяются друг с другом внутри кластера по собственному наземному высокочастотному каналу. Связь между кластерами происходит по средствам спутниковой связи Swarm
+              </p>
+            </div>
+          </div>
+          <div class="text-block text-block_position_stage">
+            <p class="text-block__list-num text-block__list-num_position_stage">03</p>
+            <div class="text-block__textblock">
+              <h3 class="text-block__title">Формирование континентальных кластеров</h3>
+              <p class="text-block__text">
+                Локальные кластеры объединяются друг с другом внутри континента по собственному наземному высокочастотному каналу. Связь между континентами для обмена ключами шифрования происходит по средствам спутниковой связи Swarm
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service">
+      <div class="container">
+        <h2 class="page-title page-title_position_service">
+           <span class="page-title__accent">Первые услуги,</span>доступные в Dexnet 
+        </h2>
+        <div class="service__content">
+          <img src="./images/service.png" alt="Вышка" class="service__img">
+          <div class="text-block">
+            <div class="text-block__textblock">
+              <h3 class="text-block__title text-block__title_position_service">DEX Mobile</h3>
+              <p class="text-block__subtitle">Первый в мире децентрализованный международный мобильный оператор.</p>
+              <p class="text-block__text text-block__text_position_service">
+                DEX Mobile использует существующую сеть GSM станций мобильной связи для обмена зашифрованным пакетом данных, ключ к которому передается абоненту по сети низкоорбитальных спутников Swarm SpaceX или по прямому собственному каналу DEX Wan.</p>
+              <p class="text-block__text text-block__text_position_service">
+                Для этого абонентам необходимо как минимум один раз подключить свое мобильное устройство с установленной eSim Dex Mobile к сети Dex Net.
+              </p>
+              <p class="text-block__text">
+                В этот момент мобильное устройство обменяется ключами дешифрации с абонентом через сеть Dex Net, минуя вышки операторов и публичный интернет
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service__content">
+          <div class="text-block">
+            <div class="text-block__textblock">
+              <h3 class="text-block__title text-block__title_position_service">DEX Cloud</h3>
+              <p class="text-block__subtitle">Технология облачного хранения данных в децентрализованной сети устройств DEX Node. </p>
+              <p class="text-block__text text-block__text_position_service">
+                Все так же просто, как разместить файл в любом известном облаке. Разница только в том, что ваш файл не хранится на сервере в дата-центре, а шифруется в контейнер, разбивается на фрагменты, каждый фрагмент копируется и размещается на устройствах DEX Node.
+              </p>
+              <p class="text-block__text text-block__text_position_service">
+                При этом система автоматически отслеживает онлайн доступ к каждой копии фрагмента контейнера и в случае утраты связи с одной из копий тут же копирует ее одновременным скачиванием со всех доступных устройств с существующим фрагментом по принципу Torrent и размещает на другое, свободное устройство. Таким образом обеспечивая круглосуточный доступ к фрагментам контейнера для мгновенной сборки и дешифрации в случае, когда вы хотите скачать свой файл из облака обратно.
+              </p>
+            </div>
+          </div>
+          <img src="./images/cloud.png" alt="Вышка" class="service__img">
+        </div>
+      </div>
+    </section>
+
+    <section class="section road">
+      <div class="container">
+        <h2 class="page-title page-title_position_road">Дорожная карта</h2>
+        <div class="road__content">
+          <img src="./images/road.png" alt="Дорожная карта" class="road__img">
+          <div class="road__text-blocks">
+            <div class="road__text-block">
+              <div class="text-block text-block_position_road">
+                <p class="text-block__list-num text-block__list-num_position_road">1-й квартал 2023</p>
+                <div class="text-block__textblock">
+                  <h3 class="text-block__title">Пресейл DEX Node</h3>
+                  <p class="text-block__text">
+                    Закрытый пресейл устройств для разворачивания децентрализованной мировой сети
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="road__text-block">
+              <div class="text-block text-block_position_road">
+                <p class="text-block__list-num text-block__list-num_position_road">2-й квартал 2023</p>
+                <div class="text-block__textblock">
+                  <h3 class="text-block__title">Активация DEX Net</h3>
+                  <p class="text-block__text">
+                    Активация устройств DEX Node и развертывание децентрализованной сети DEX Net
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="road__text-block">
+              <div class="text-block text-block_position_road">
+                <p class="text-block__list-num text-block__list-num_position_road">3-й квартал 2023</p>
+                <div class="text-block__textblock">
+                  <h3 class="text-block__title">Запуск DEX Mobile</h3>
+                  <p class="text-block__text">
+                    Старт продаж sim-карт первого децентрализованного международного мобильного оператора
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="road__text-block">
+              <div class="text-block text-block_position_road">
+                <p class="text-block__list-num text-block__list-num_position_road">4-й квартал 2023</p>
+                <div class="text-block__textblock">
+                  <h3 class="text-block__title">Открытие DEX Cloud</h3>
+                  <p class="text-block__text">
+                    Децентрализованное дисковое хранилище для частного и коммерческого использования
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container"></div>
+    <div class="container">
+      <img src="./images/DEXNET.svg" alt="Dexnet" class="footer__img">
+    </div>
   </footer>
 </div>
 
 
-<script src="./js/index.js" defer="defer"></script>
+<script src="./js/app.js" defer="defer"></script>
 
 </body>
 </html>
