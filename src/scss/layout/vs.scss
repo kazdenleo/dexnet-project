@@ -27,6 +27,7 @@
         &__block {
             width: 100%;
             padding: 34px;
+            margin-bottom: 10px;
         }
     }
 
@@ -38,9 +39,5 @@
     &__cont {
         display: flex;
         align-items: flex-start;
-    }
-
-    &__img {
-        padding-left: 40px;
     }
 }

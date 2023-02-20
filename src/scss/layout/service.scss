@@ -6,7 +6,25 @@
         //background: no-repeat left/571px url(../../images/service.png);
     }
 
-    &__img {
-        max-width: 700px;
+    @media screen and (max-width: 600px) {
+        &__content  {
+            flex-direction: column;
+            &_reverse {
+                flex-direction: column-reverse;
+            }
+        }
     }
+    
+    &__img {
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+        &__img  {
+            flex-direction: column;
+            max-width: 100%;
+        }
+    }
+
+    
 }

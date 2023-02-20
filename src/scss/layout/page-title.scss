@@ -3,6 +3,15 @@
     font-weight: 900;
     line-height: 50px;
 
+    @media screen and (max-width: 600px) {
+    & {
+        font-family: Eurostile Extd;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 36px;
+        }
+    }
+
     &__accent {
         color: $blueColor;
     }
@@ -29,17 +38,7 @@
     &_position_vs {
         max-width: 600px;
     }
-
-    @media screen and (max-width: 600px) {
-        &_position_vs {
-            font-family: Eurostile Extd;
-            font-size: 36px;
-            font-weight: 900;
-            line-height: 36px;
-            max-width: 300px;
-        }
-    }
-
+    
     &_position_device {
         display: grid;
         max-width: 380px;

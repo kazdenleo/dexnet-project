@@ -3,8 +3,20 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 600px) {
+        & {
+            flex-direction: column;
+        }
+    }
+
     &_position_device {
         flex-direction: column;
+    }
+
+    @media screen and (max-width: 600px) {
+        &_position_device {
+            padding: 190px 0 96px;
+        }
     }
 
     &__num {
@@ -14,6 +26,14 @@
         line-height: 1.19;
         color: $whiteColor;
         padding: 0 46px;
+    }
+
+    @media screen and (max-width: 600px) {
+        &__num {
+            font-family: Eurostile Extd;
+            font-size: 42px;
+            line-height: 50px;
+        }
     }
 
     @media screen and (max-width: 600px) {
@@ -27,6 +47,12 @@
         justify-items: center;
         padding: 46px 0 0;
         color: $blueColor;
+    }
+
+    @media screen and (max-width: 600px) {
+        &__num_position_device {
+            padding: 25px 0 0;
+        }
     }
     
     &__price-cur {

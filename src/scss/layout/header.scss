@@ -9,6 +9,10 @@
   &__top-container {
     padding: 25px 0 23px;
   }
+
+  &__logos {
+    max-width: 100%;
+  }
   
   @media screen and (max-width: 768px) {
     &__top-container {
@@ -33,7 +37,7 @@
     &__content {
         padding: 68px 0;
         text-align: center;
-        no-repeat left/700px url(../../images/sputnik.png),
+        background: no-repeat left/700px url(../../images/sputnik.png),
         no-repeat 25% 0% url(../../images/main-earth.png);
     }
   }

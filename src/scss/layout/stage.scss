@@ -9,4 +9,11 @@
         justify-content: space-between;
         padding: 69px 0;
     }
+
+    @media screen and (max-width: 1000px) {
+        &__elements  {
+            display: grid;
+            row-gap: 32px;
+        }
+    }
 }
