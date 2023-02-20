@@ -1,11 +1,12 @@
 .page-title {
+    font-family: 'Eurostile Extd';
     font-size: 50px;
     font-weight: 900;
     line-height: 50px;
 
     @media screen and (max-width: 600px) {
     & {
-        font-family: Eurostile Extd;
+        font-family: 'Eurostile Extd';
         font-size: 36px;
         font-weight: 900;
         line-height: 36px;

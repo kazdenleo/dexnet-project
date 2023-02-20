@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
   font-family: 'Eurostile';
   font-display: swap;
   src: url("../../fonts/Eurostile-Bol.woff2") format("woff2"), url("../../fonts/Eurostile-Bol.woff") format("woff");
@@ -46,4 +46,44 @@
   src: url("../../fonts/EurostileExtd-Reg.woff2") format("woff2"), url("../../fonts/EurostileExtd-Reg.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+}*/
+
+
+@font-face {
+  font-family: 'Eurostile';
+  font-display: swap;
+  src:  url("../../fonts/Eurostile-Regular.woff2") format("woff2"),
+        url("../../fonts/Eurostile-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Eurostile';
+  font-display: swap;
+  src:  url("../../fonts/Eurostile-Medium.woff2") format("woff2"),
+        url("../../fonts/Eurostile-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'Eurostile';
+  font-display: swap;
+  src:  url("../../fonts/Eurostile-Bold.woff2") format("woff2"),
+        url("../../fonts/Eurostile-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+
+@font-face {
+  font-family: 'Eurostile Extd';
+  font-display: swap;
+  src:  url("../../fonts/Eurostile-Extended-B.woff2") format("woff2"),
+        url("../../fonts/Eurostile-Extended-B.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
 }

@@ -1,45 +1,80 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Eurostile";
+/*@font-face {
+  font-family: 'Eurostile';
   font-display: swap;
   src: url("../../fonts/Eurostile-Bol.woff2") format("woff2"), url("../../fonts/Eurostile-Bol.woff") format("woff");
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-display: swap;
   src: url("../../fonts/Eurostile-Reg.woff2") format("woff2"), url("../../fonts/Eurostile-Reg.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-display: swap;
   src: url("../../fonts/Eurostile-Reg.woff2") format("woff2"), url("../../Eurostile-Reg.woff") format("woff");
   font-weight: 500;
   font-style: light;
 }
 @font-face {
-  font-family: "Eurostile";
+  font-family: 'Eurostile';
   font-display: swap;
   src: url("../../fonts/Eurostile-Med.woff2") format("woff2"), url("../../Eurostile-Med.woff") format("woff");
   font-weight: 600;
   font-style: medium;
 }
+
+
+
+
+
+
 @font-face {
-  font-family: "Eurostile Extd";
+  font-family: 'Eurostile Extd';
   font-display: swap;
   src: url("../../fonts/EurostileExtd-Black.woff2") format("woff2"), url("../../fonts/EurostileExtd-Black.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Eurostile Extd';
+  font-display: swap;
+  src: url("../../fonts/EurostileExtd-Reg.woff2") format("woff2"), url("../../fonts/EurostileExtd-Reg.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}*/
+@font-face {
+  font-family: "Eurostile";
+  font-display: swap;
+  src: url("../../fonts/Eurostile-Regular.woff2") format("woff2"), url("../../fonts/Eurostile-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Eurostile";
+  font-display: swap;
+  src: url("../../fonts/Eurostile-Medium.woff2") format("woff2"), url("../../fonts/Eurostile-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Eurostile";
+  font-display: swap;
+  src: url("../../fonts/Eurostile-Bold.woff2") format("woff2"), url("../../fonts/Eurostile-Bold.woff") format("woff");
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
   font-family: "Eurostile Extd";
   font-display: swap;
-  src: url("../../fonts/EurostileExtd-Reg.woff2") format("woff2"), url("../../fonts/EurostileExtd-Reg.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+  src: url("../../fonts/Eurostile-Extended-B.woff2") format("woff2"), url("../../fonts/Eurostile-Extended-B.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
 }
 /* Шаблоны (заготовки)
 * @extend %имя шаблона;
@@ -261,16 +296,22 @@ body.lock {
 }
 @media screen and (max-width: 600px) {
   .container {
-    padding: 28px;
+    padding: 0 28px;
   }
   .container_info {
     padding: 0px;
   }
 }
-.container_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0px;
+  }
+  .container_dex-info {
+    padding: 0 28px;
+  }
+  .container_header {
+    padding: 0 28px;
+  }
 }
 
 .header {
@@ -317,7 +358,6 @@ body.lock {
     padding: 16px 0 32px;
     font-size: 18px;
     line-height: 22px;
-    max-width: 320px;
   }
 }
 .header__top-content {
@@ -626,13 +666,14 @@ body.lock {
 }
 
 .page-title {
+  font-family: "Eurostile Extd";
   font-size: 50px;
   font-weight: 900;
   line-height: 50px;
 }
 @media screen and (max-width: 600px) {
   .page-title {
-    font-family: Eurostile Extd;
+    font-family: "Eurostile Extd";
     font-size: 36px;
     font-weight: 900;
     line-height: 36px;
@@ -676,7 +717,7 @@ body.lock {
 .button {
   color: #111;
   padding: 30px 50px;
-  font-family: Eurostile;
+  font-family: "Eurostile";
   font-size: 22px;
   font-weight: 700;
   line-height: 1.36;
@@ -685,7 +726,7 @@ body.lock {
   background-size: 51% 51%;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .button_type_vs {
     display: none;
   }
@@ -744,9 +785,10 @@ body.lock {
   padding-top: 50px;
   column-gap: 8px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .vs__blocks {
-    flex-direction: column;
+    display: grid;
+    row-gap: 10px;
   }
 }
 .vs__block {
@@ -757,6 +799,17 @@ body.lock {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media screen and (max-width: 1180px) {
+  .vs__block {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .vs__block {
+    padding: 40px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   .vs__block {
@@ -824,36 +877,48 @@ body.lock {
     padding-bottom: 16px;
   }
 }
-@media screen and (max-width: 1000px) {
-  .device__list {
-    list-style: disc;
-  }
-}
 .device__char-num {
-  font-family: Eurostile Extd;
+  font-family: "Eurostile Extd";
   font-size: 42px;
   font-weight: 500;
   line-height: 50px;
   min-width: 70px;
+  position: relative;
+}
+.device__char-num-icon::after {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 24px;
+  right: 28px;
+  content: "";
+  background: url(../../images/information.svg) no-repeat;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .device__char-num-text {
-  font-family: Eurostile;
+  font-family: "Eurostile";
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
 }
 .device__char-num-text {
-  font-family: Eurostile;
+  font-family: "Eurostile";
   font-size: 18px;
   line-height: 20px;
 }
 .device__list-item {
-  font-family: Eurostile;
+  font-family: "Eurostile";
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
   color: #fff;
   opacity: 0.5;
+}
+@media screen and (max-width: 1000px) {
+  .device__list-item {
+    list-style: disc;
+  }
 }
 
 .stage {
@@ -949,7 +1014,7 @@ body.lock {
   }
 }
 .price__num {
-  font-family: Eurostile Extd;
+  font-family: "Eurostile Extd";
   font-size: 42px;
   font-weight: 500;
   line-height: 1.19;
@@ -980,7 +1045,7 @@ body.lock {
   }
 }
 .price__price-cur {
-  font-family: Eurostile;
+  font-family: "Eurostile";
   font-size: 18px;
   font-weight: 500;
   line-height: 1.11;
@@ -1038,12 +1103,18 @@ body.lock {
 }
 .text-block_position_vs {
   grid-template-areas: "item1 item3" "item2 item3";
+  column-gap: 40px;
+}
+@media screen and (max-width: 1180px) {
+  .text-block_position_vs {
+    gap: 0 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .text-block_position_vs {
     grid-template-areas: "item1 item3" "item2 item2";
     align-items: center;
-    row-gap: 19px;
+    gap: 19px 0;
     justify-items: end;
   }
 }

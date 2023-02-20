@@ -19,17 +19,22 @@
   
   @media screen and (max-width: 600px) {
     & {
-      padding: 28px;
+      padding: 0 28px;
     }
     &_info {
       padding: 0px;
     }
   }
   
-  
-  &_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  @media screen and (max-width: 480px) {
+    & {
+      padding: 0px;
+    }
+    &_dex-info {
+      padding: 0 28px;
+    }
+    &_header {
+      padding: 0 28px;
+    }
   }
 }

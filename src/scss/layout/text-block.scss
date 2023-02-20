@@ -47,6 +47,13 @@
         grid-template-areas:
         'item1 item3'
         'item2 item3';
+        column-gap: 40px;
+    }
+
+    @media screen and (max-width: 1180px) {
+        &_position_vs {
+            gap: 0 20px;
+        }
     }
 
     @media screen and (max-width: 600px) {
@@ -55,7 +62,7 @@
             'item1 item3'
             'item2 item2';
             align-items: center;
-            row-gap: 19px;
+            gap: 19px 0;
             justify-items: end;
         }
     }

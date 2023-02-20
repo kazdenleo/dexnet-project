@@ -55,40 +55,53 @@
         }
     }
 
-    @media screen and (max-width: 1000px) {
-        &__list {
-            list-style: disc;
-        }
-    }
-
     &__char-num {
-        font-family: Eurostile Extd;
+        font-family: "Eurostile Extd";
         font-size: 42px;
         font-weight: 500;
         line-height: 50px;
         min-width: 70px;
+        position: relative;
+    }
+
+    &__char-num-icon::after {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: 24px;
+        right: 28px;
+        content: "";
+        background: url(../../images/information.svg) no-repeat;
+        cursor: pointer;
+        transition: .5s;
     }
 
     &__char-num-text {
-        font-family: Eurostile;
+        font-family: "Eurostile";
         font-size: 18px;
         font-weight: 500;
         line-height: 18px;
     }
 
     &__char-num-text {
-        font-family: Eurostile;
+        font-family: "Eurostile";
         font-size: 18px;
         line-height: 20px;
     }
 
     &__list-item {
-        font-family: Eurostile;
+        font-family: "Eurostile";
         font-size: 17px;
         font-weight: 400;
         line-height: 20px;
         color: $whiteColor;
         opacity: .5;
+    }
+
+    @media screen and (max-width: 1000px) {
+        &__list-item {
+            list-style: disc;
+        }
     }
 
 }
